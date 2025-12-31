@@ -85,11 +85,9 @@ Or if you already have the repo cloned:
 claude --plugin-dir /path/to/agentproductionskills
 ```
 
-**Option 2: Install from GitHub**
+**Option 2: Submit to Official Marketplace**
 
-```bash
-/plugin install github:muratcankoylan/Agent-Skills-for-Context-Engineering
-```
+To make your plugin publicly installable via `/plugin install`, submit it to the [official Claude Code plugins repository](https://github.com/anthropics/claude-plugins-official) for inclusion in `/external_plugins`.
 
 ### Testing the Plugin
 
