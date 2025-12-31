@@ -66,45 +66,53 @@ Scripts and examples demonstrate concepts using Python pseudocode that works acr
 
 ### Usage with Claude Code
 
-This repository is a **Claude Code Plugin** containing context engineering skills that Claude automatically discovers and activates based on your task context.
+This repository is a **Claude Code Plugin Marketplace** containing context engineering skills that Claude automatically discovers and activates based on your task context.
 
 ### Installation
 
-**Option 1: Test Locally (Recommended for Development)**
+**Step 1: Add the Marketplace**
 
-Clone the repository and run Claude Code with the plugin directory:
+Run this command in Claude Code to register this repository as a plugin source:
+
+```
+/plugin marketplace add muratcankoylan/Agent-Skills-for-Context-Engineering
+```
+
+**Step 2: Browse and Install**
+
+Option A - Browse available plugins:
+1. Select `Browse and install plugins`
+2. Select `context-engineering-marketplace`
+3. Choose a plugin (e.g., `context-engineering-fundamentals`, `agent-architecture`)
+4. Select `Install now`
+
+Option B - Direct install via command:
+
+```
+/plugin install context-engineering-fundamentals@context-engineering-marketplace
+/plugin install agent-architecture@context-engineering-marketplace
+/plugin install agent-evaluation@context-engineering-marketplace
+/plugin install agent-development@context-engineering-marketplace
+```
+
+### Local Development
+
+For testing changes locally before pushing:
 
 ```bash
-git clone https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering.git
-claude --plugin-dir ./Agent-Skills-for-Context-Engineering
+claude --plugin-dir /path/to/Agent-Skills-for-Context-Engineering
 ```
 
-Or if you already have the repo cloned:
+### Available Plugins
 
-```bash
-claude --plugin-dir /path/to/agentproductionskills
-```
+| Plugin | Skills Included |
+|--------|-----------------|
+| `context-engineering-fundamentals` | context-fundamentals, context-degradation, context-compression, context-optimization |
+| `agent-architecture` | multi-agent-patterns, memory-systems, tool-design |
+| `agent-evaluation` | evaluation, advanced-evaluation |
+| `agent-development` | project-development |
 
-**Option 2: Submit to Official Marketplace**
-
-To make your plugin publicly installable via `/plugin install`, submit it to the [official Claude Code plugins repository](https://github.com/anthropics/claude-plugins-official) for inclusion in `/external_plugins`.
-
-### Testing the Plugin
-
-Once installed, skills activate automatically based on your queries. Try these:
-
-```
-# Triggers context-fundamentals skill:
-"Help me understand context windows"
-
-# Triggers multi-agent-patterns skill:
-"Design a multi-agent architecture"
-
-# Triggers tool-design skill:
-"Create agent tools"
-```
-
-**Available Skills:**
+### Skill Triggers
 
 | Skill | Triggers On |
 |-------|-------------|
