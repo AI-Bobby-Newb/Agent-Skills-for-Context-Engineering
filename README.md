@@ -57,6 +57,7 @@ These skills cover the meta-level practices for building LLM-powered projects.
 | Skill | Description |
 |-------|-------------|
 | [project-development](skills/project-development/) | Design and build LLM projects from ideation through deployment, including task-model fit analysis, pipeline architecture, and structured output design |
+| [skill-creator](skills/skill-creator/) | Create and refine high-quality skills with strong activation metadata, progressive disclosure, and reusable references/scripts/assets |
 
 ### Cognitive Architecture Skills
 

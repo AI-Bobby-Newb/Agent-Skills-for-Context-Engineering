@@ -88,6 +88,7 @@ Internal skills in this collection:
 - [context-optimization](skills/context-optimization/SKILL.md)
 - [evaluation](skills/evaluation/SKILL.md)
 - [project-development](skills/project-development/SKILL.md)
+- [skill-creator](skills/skill-creator/SKILL.md)
 
 External resources on context engineering:
 - Research on attention mechanisms and context window limitations
