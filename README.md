@@ -153,6 +153,22 @@ Copy skill content into `.rules` or create project-specific Skills folders. The 
 
 Extract the principles and patterns from any skill and implement them in your agent framework. The skills are deliberately platform-agnostic.
 
+
+## Utility Script: 1-Shot Prompt Generator
+
+Use `scripts/one_shot_prompt_generator.py` to transform a rough product idea into a refined one-shot prompt. The script asks requirement-elicitation questions (goal, audience, constraints, quality bar, non-goals, edge cases, etc.) and composes a single production-ready prompt.
+
+```bash
+python scripts/one_shot_prompt_generator.py "Build an AI support chatbot for an ecommerce store"
+```
+
+For automation/non-interactive workflows, pass prefilled answers via JSON:
+
+```bash
+python scripts/one_shot_prompt_generator.py "Build a REST API" \
+  --answers-json '{"goal":"Ship MVP in 2 weeks","output_format":"Markdown"}'
+```
+
 ## Examples
 
 The [examples](examples/) folder contains complete system designs that demonstrate how multiple skills work together in practice.
